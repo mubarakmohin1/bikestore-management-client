@@ -1,0 +1,61 @@
+[
+    {
+      "picture": "https://www.banglamotor.net/images/yamaha/yamaha-r15-v3-indonesian-image1.jpg",
+      "name": "Yamaha",
+      "about": "Your gateway to the industry leading powersports company. From Yamaha motorcycles and off-road vehicles to boats, outboard motors and much more",
+      "price":"$5k",
+      "quantity":"1",
+      "supplierName":"Mubarak"
+    },
+    {
+      "picture": "https://www.mototechindia.com/wp-content/uploads/2021/01/suzuki-gsx-r150.jpg",
+      "name": "GSX",
+      "about": "Welcome to the Suzuki Bangladesh | RANCON MOTORBIKES LTD. official website. Get your Suzuki Motorbike from our range of brand new motorbikes.",
+      "price":"$4k",
+      "quantity":"1",
+      "supplierName":"Mubarak"
+
+    },
+    {
+      "picture": "https://images.hindustantimes.com/auto/img/2022/04/13/600x338/Yamaha_MT15_Ice_Fluo_Vermilion_1649677534827_1649820982640.jpg",
+      "name": "MT15",
+      "about": "Yamaha MT-15 Version 2.0 Engine. Powering the Yamaha MT-15 is a 155cc single-cylinder liquid-cooled 4-valve motor rated at 18.4PS at 10,000rpm and 14.1Nm",
+      "price":"$4.5k",
+      "quantity":"1",
+      "supplierName":"Mubarak"
+
+    },
+    {
+      "picture": "https://imgd.aeplcdn.com/1200x900/n/cw/ec/102895/rc-200-2021-right-front-three-quarter.jpeg?isig=0",
+      "name": "KTM",
+      "about": "KTM FACTORY RACING CLOSE A TROPHY-LADEN 2021. View Profile. 2021 has been a memorable campaign for Red Bull KTM Factory Racing across the disciplines. Spirited",
+      "price":"$6.5k",
+      "quantity":"1",
+      "supplierName":"Mubarak"
+
+    },
+    {
+      "picture": "https://www.banglamotor.net/images/taro/taro-gp-one-sp-image1.jpg",
+      "name": "Taro gp",
+      "about": "Taro GP-1 150cc is Italian brand sports bike is launched in Bangladesh. Check latest Price, Specs, Colors, Origin, Mileage, top speed etc",
+      "price":"$3.5k",
+      "quantity":"1",
+      "supplierName":"Mubarak"
+    },
+    {
+      "picture": "https://cdn.bajajauto.com/-/media/assets/bajajauto/360degreeimages/bikes/pulsar/pulsar-150/twin-disc/black-red/00.png",
+      "name": "Bajaj",
+      "about": "Bajaj Auto is a leading manufacturer of motorcycles and three-wheelers in India. Check out the motorbikes offered by Bajaj Auto and book one online right ",
+      "price":"$1.5k",
+      "quantity":"1",
+      "supplierName":"Mubarak"
+    },
+    {
+      "picture": "https://www.tvsmotor.com/tvs-apache/-/media/Brand-Pages/Apache/Apache-RTR/Apache-RTR-160-4V/160-4V---Red---600-Resulation---750-x-536-Pix.png",
+      "name": "Apache 4v",
+      "about": "The TVS Apache RTR 160 4V is a Sports bike available at a starting price of Rs. 1.12 Lakh. The bike is available in 4 variants with 3 colour options.",
+      "price":"$1.8k",
+      "quantity":"1",
+      "supplierName":"Mubarak"
+    }
+  ]
