@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
+import CheckDetails from './components/CheckDetails/CheckDetails';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
@@ -25,7 +26,7 @@ function App() {
         
         <Route path ='/stock' element={<Stock></Stock>}></Route>
         <Route path='/myitems' element={<MyItems></MyItems>}></Route>
-        
+        <Route path='/checkout/:checkoutId' element={<CheckDetails></CheckDetails>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/signIn' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
