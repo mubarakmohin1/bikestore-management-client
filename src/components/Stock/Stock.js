@@ -21,7 +21,7 @@ const Stock = ({ stock }) => {
                     <Card.Text>
                         {about}
                     </Card.Text>
-                    <Button onClick={() => handleCheckDetails(_id)} className='w-100' variant="primary">See Details</Button>
+                    <Button onClick={() => handleCheckDetails(_id)} className='w-100' variant="primary">Update</Button>
                 </Card.Body>
             </Card>
 
