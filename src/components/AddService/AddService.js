@@ -2,16 +2,22 @@ import React from 'react';
 import { useForm } from "react-hook-form";
 
 const AddService = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
-
+    const { register, handleSubmit } = useForm();
+  const onSubmit = data => console.log(data);
+   
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
-      <input {...register("firstName", { required: true, maxLength: 20 })} />
-      <input {...register("lastName", { pattern: /^[A-Za-z]+$/i })} />
-      <input type="number" {...register("age", { min: 18, max: 99 })} />
-      <input type="submit" />
+       <div className='w-50 mx-auto'>
+            <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
+      <input className='mb-2 mt-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
+      <input className='mb-2 mt-2' placeholder='supplierName' {...register("suppliername", { required: true, maxLength: 20 })} />
+      <input  type="number" className='mb-2' placeholder='price' {...register("price")} />
+      <input  type="number" className='mb-2' placeholder='quantity' {...register("quantity")} />
+      <input className='mb-2' placeholder='about' {...register("about")} />
+      <input className='mb-2' placeholder='photo url' {...register("picture")} />
+      
+      <input type="Add Stock" />
     </form>
+       </div>
     );
 };
 
