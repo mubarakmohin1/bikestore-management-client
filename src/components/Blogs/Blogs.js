@@ -12,6 +12,9 @@ const Blogs = () => {
             <p>Ans:SQL is the programming language used to interface with relational databases. (Relational databases model data as records in rows and tables with logical links between them). NoSQL is a class of DBMs that are non-relational and generally do not use SQL.SQL databases provide great benefits for transactional data whose structure doesn't change frequently (or at all) and where data integrity is paramount. It's also best for fast analytical queries. NoSQL databases provide much more flexibility and scalability, which lends itself to rapid development and iteration.</p>
             <b className='my-2'>Question:jwt token purposes and how does it works?</b>
             <p>Ans:JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed.JWT, or JSON Web Token, is an open standard used to share security information between two parties — a client and a server. Each JWT contains encoded JSON objects, including a set of claims. JWTs are signed using a cryptographic algorithm to ensure that the claims cannot be altered after the token is issued</p>
+
+            {/* https://stackoverflow.com/q/72159309/19066936
+             */}
         </div>
     );
 };
