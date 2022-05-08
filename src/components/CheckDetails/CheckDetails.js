@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Button, Card } from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
 
 const CheckDetails = () => {
     const { checkoutId } = useParams();
@@ -10,12 +11,36 @@ const CheckDetails = () => {
         .then(res => res.json())
         .then(data => setDetails(data));
     },[])
+
+const handleShift = () =>{
+    const firstView = details.quantity;
+    const lastView = firstView - 1;
+    console.log(lastView)
+    setDetails(lastView);
+}
+const handleStock = () =>{
+     
+
+}
+
     return (
-        <div className='d-flex justify-content-center align-items-center mt-5'>
-            <h2>{details.name}</h2> <br />
-            <Link to='/permission'>
-                <button className='btn btn-primary ms-4'>Permission</button>
-            </Link>
+        <div className=' container mt-5'>
+             <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src={details.picture} />
+            <Card.Body>
+                <Card.Title>{details.name}</Card.Title>
+                <p>Price:{details.price}</p>
+                <b>quantity:{details.quantity}</b>
+                <p>SupplierName:{details.supplierName}</p>
+                <Card.Text>
+                    {details.about}
+                </Card.Text>
+                <Button onClick={()=>handleShift()}>Delivared</Button>
+            </Card.Body>
+        </Card>
+
+        <input type="number" placeholder='quantity' required  />
+        <input onClick={() =>handleStock(details._id)} type="submit" value="Stock" />
 
         </div>
     );

@@ -11,7 +11,7 @@ import RequireAuth from './components/Login/RequireAuth/RequireAuth';
 import MyItems from './components/MyItems/MyItems';
 import NotFound from './components/NotFound/NotFound';
  
-import Permission from './components/Permission/Permission';
+// import Permission from './components/Permission/Permission';
 import Register from './components/Register/Register';
 import Services from './components/Services/Services';
 import Stock from './components/Stock/Stock';
@@ -27,11 +27,11 @@ function App() {
         
         <Route path ='/stock' element={<Stock></Stock>}></Route>
         <Route path='/myitems' element={<MyItems></MyItems>}></Route>
-        <Route path='/checkout/:checkoutId' element={<CheckDetails></CheckDetails>}></Route>
+        <Route path='/checkout/:checkoutId' element={<RequireAuth><CheckDetails></CheckDetails></RequireAuth>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/signIn' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
-        <Route path='/permission' element={<RequireAuth><Permission></Permission></RequireAuth>}></Route>
+        {/* <Route path='/permission' element={<RequireAuth><Permission></Permission></RequireAuth>}></Route> */}
         <Route path='/addservice' element={<RequireAuth><AddService></AddService></RequireAuth>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>

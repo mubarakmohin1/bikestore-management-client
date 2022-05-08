@@ -1,8 +1,23 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 
 const Item = ({item}) => {
-     const { picture, name, quantity,supplierName, price, about, } = item;
+     const { picture, name, quantity,supplierName, price, about,_id } = item;
+const handleDelete = id =>{
+    const proceed = window.confirm('Are you sure?');
+    if(proceed){
+        const url = `http://localhost:5000/stock/${id}`;
+        fetch(url, {
+            method: 'DELETE'
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            // const remaining = services.filter(service => service._id !== id);
+            // setServices(remaining);
+        })
+    }
+}
     return (
         <div className='col-lg-4 col-md-6 col-sm-12'>
         <Card style={{ width: '18rem' }}>
@@ -15,7 +30,7 @@ const Item = ({item}) => {
                 <Card.Text>
                     {about}
                 </Card.Text>
-                
+                <Button onClick={()=>handleDelete(_id)}>Delete</Button>
             </Card.Body>
         </Card>
 
