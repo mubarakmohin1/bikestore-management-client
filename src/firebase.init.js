@@ -1,17 +1,17 @@
-// Import the functions you need from the SDKs you need
+ 
 import { initializeApp } from "firebase/app";
-import {getAuth} from 'firebase/auth'
+import { getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBfKUUzaMhptqNyHSMA8UbXmEzjQ0jpOPI",
-  authDomain: "provide-personalized-services.firebaseapp.com",
-  projectId: "provide-personalized-services",
-  storageBucket: "provide-personalized-services.appspot.com",
-  messagingSenderId: "222062237265",
-  appId: "1:222062237265:web:adda543aee9a8ea874ca70"
+  apiKey: "AIzaSyBdINgcYwCuPj9gqw4iqvXAP6dVqQFMVnA",
+  authDomain: "bikestore-different-brand.firebaseapp.com",
+  projectId: "bikestore-different-brand",
+  storageBucket: "bikestore-different-brand.appspot.com",
+  messagingSenderId: "276065755023",
+  appId: "1:276065755023:web:5a79d2c7f9df1034bff5fa"
 };
 
 // Initialize Firebase
