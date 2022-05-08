@@ -1,7 +1,8 @@
-import React from 'react';
+ 
 import { Button, Card } from 'react-bootstrap';
 
 const Item = ({item}) => {
+    // const [stocks,setStocks] = useState({});
      const { picture, name, quantity,supplierName, price, about,_id } = item;
 const handleDelete = id =>{
     const proceed = window.confirm('Are you sure?');
@@ -13,8 +14,8 @@ const handleDelete = id =>{
         .then(res => res.json())
         .then(data => {
             console.log(data);
-            // const remaining = services.filter(service => service._id !== id);
-            // setServices(remaining);
+            // const remaining = stocks.filter(stock => stock._id !== id);
+            // setStocks(remaining);
         })
     }
 }
